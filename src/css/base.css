@@ -269,7 +269,7 @@ main {
 	line-height: 1;
 	display: block;
 	cursor: pointer;
-	//transition: color 0.2s;
+	transition: color 0.2s;
 }
 
 .menu__item-link:hover,
@@ -318,8 +318,22 @@ main {
 	}
 	.frame__menu {
 		grid-area: menu;
-		justify-self: end;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 1rem;
 	}
+
+	.frame__title {
+		position: absolute; /* Position the title absolutely within the container */
+		top: 0;
+		left: 0;
+		margin: 3rem; /* Add margin to adjust the spacing */
+		color: var(--color-title); /* Inherit the color property */
+		font-size: 1rem; /* Inherit the font-size property */
+		font-weight: 600; /* Inherit the font-weight property */
+	  }
+
 	.frame a {
 		pointer-events: auto;
 	}
