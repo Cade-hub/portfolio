@@ -21,8 +21,10 @@
     "url": "https://github.com/codrops/BackgroundScaleHoverEffect/issues"
   },
   "dependencies": {
+    "fonts": "^0.0.2",
     "gsap": "^3.2.4",
     "imagesloaded": "^4.1.4",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "src": "^1.1.2"
   }
 }

@@ -1,3 +1,7 @@
+@font-face {
+	font-family: "Krifon";
+	src: url("../fonts/krifon/Krifon Regular.otf");
+  }
 *,
 *::after,
 *::before {
@@ -25,7 +29,7 @@ body {
 	--clip-1: polygon(37% 15%, 63% 15%, 63% 85%, 37% 85%);
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: soleil, Futura, "Trebuchet MS", Arial, sans-serif;
+	font-family: krifon;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -263,7 +267,7 @@ main {
 
 .menu__item-link {
 	color: var(--color-menu-link);
-	font-family: var(--font-menu-link);
+	font-family: krifon;
 	font-weight: var(--font-weight-menu-link);
 	font-size: 3rem;
 	line-height: 1;

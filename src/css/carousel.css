@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('../fonts/magic_retro/Magic Retro.ttf');
+
+@font-face {
+  font-family: "Krifon";
+  src: url("../fonts/krifon/Krifon Regular.otf");
+}
 
 @keyframes backgroundAnimation {
   0% { background-color: #051b00; }
@@ -104,6 +111,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: black;
   animation: backgroundAnimation 10s ease-in-out infinite alternate;
@@ -121,19 +129,33 @@ body {
   padding: 10px 20px; /* Adjust padding as needed */
 }
 
+
 .header__left {
   color: white; /* Text color */
+ 
+}
+
+.header__left h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #553c9a;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .back-button {
   text-decoration: none; /* Remove underlines */
   color: white; /* Text color */
   font-size: 18px; /* Adjust font size as needed */
+  font-family: krifon;
 }
 
 .header__middle {
   text-align: center; /* Center-align the text */
   flex-grow: 1; /* Expand to take available space */
+  font-family: krifon;
 }
 
 .header__right {
@@ -150,7 +172,6 @@ body {
 .header__icon img {
   display: block;
 }
-
 
 @supports (height: 100dvh) {
   body {
@@ -291,11 +312,60 @@ h6 {
   align-items: center;
 }
 .instagram__buttons .left {
+  width: 100%;
+  height: 2vh;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 0;
 }
+
+.instagram__buttons .left h1{
+  font-size: 35px;
+  font-weight: 500;
+  color: #ffffff;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: Magic Retro;
+  animation: typing 15s infinite steps(16), cursor 1s infinite step-end;
+}
+
+@keyframes cursor {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 16ch;
+  }
+  80% {
+    width: 16ch;
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 .instagram__buttons .left svg:nth-of-type(2) {
   margin-inline: 12px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier Prime", monospace;
+  background-color: #fdfdfe;
+
 }
 .instagram__icon {
   cursor: pointer;
