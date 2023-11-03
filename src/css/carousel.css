@@ -111,12 +111,11 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: black;
   animation: backgroundAnimation 10s ease-in-out infinite alternate;
   margin: 0; /* Remove default body margin */
-  font-family: "Montserrat", sans-serif;
+  
   color: var(--text-primary);
   overflow: hidden;
 }
@@ -132,7 +131,7 @@ body {
 
 .header__left {
   color: white; /* Text color */
- 
+
 }
 
 .header__left h1 {
@@ -148,14 +147,34 @@ body {
 .back-button {
   text-decoration: none; /* Remove underlines */
   color: white; /* Text color */
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 30px; /* Adjust font size as needed */
   font-family: krifon;
+}
+
+.back-button:hover {
+  transform: scale(1.1); /* Enlarge the button on hover */
+  color: #f0b579; /* Darken the color of text */
 }
 
 .header__middle {
   text-align: center; /* Center-align the text */
   flex-grow: 1; /* Expand to take available space */
-  font-family: krifon;
+  font-family: krifon;;
+  font-size: 25px;
+}
+
+.header__middle h1{
+  color: transparent;
+  background-image: linear-gradient(to right ,#fff, #ffe7cf, #ffa998, #ff7f50, #b86338, #fff);
+  -webkit-background-clip: text;
+  background-clip: text;    
+  background-size: 200%;
+  background-position: -200%;
+  transition: all ease-in-out 3s;
+  cursor: pointer;
+}
+.header__middle h1:hover{
+  background-position: 200%;
 }
 
 .header__right {
@@ -395,3 +414,4 @@ h6 {
 .instagram__icon--saved path {
   stroke-width: 2;
 }
+
