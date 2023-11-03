@@ -1,5 +1,10 @@
 let CHECKED = false;
-document.addEventListener("pointerdown", (e) => {
-	CHECKED = !CHECKED;
-	document.documentElement.style.setProperty("--light", CHECKED ? 1 : 0);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const backgroundElement = document.querySelector("body");
+
+    backgroundElement.addEventListener("click", () => {
+        CHECKED = !CHECKED;
+        document.documentElement.style.setProperty("--left", CHECKED ? 1 : 0);
+    });
 });

@@ -178,7 +178,7 @@ main {
 }
 
 .frame__pagetitle {
-	font-size: 1rem;
+	font-size: 20x;
 	margin: 0 0 1rem;
 	font-weight: 600;
 	color: var(--color-title);

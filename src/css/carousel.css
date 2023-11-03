@@ -8,9 +8,9 @@
 }
 
 @keyframes backgroundAnimation {
-  0% { background-color: #051b00; }
-  50% { background-color: #000f22; }
-  100% { background-color: #220101; }
+  0% { background-color: #000000; }
+  50% { background-color: #292929; }
+  100% { background-color: #111111; }
 }
 
 @-webkit-keyframes carousel-animate {
@@ -122,6 +122,8 @@ body {
 
 .header {
   display: flex;
+  padding: 0px 0px;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
   background-color: black; /* Header background color */
@@ -157,7 +159,6 @@ body {
 }
 
 .header__middle {
-  text-align: center; /* Center-align the text */
   flex-grow: 1; /* Expand to take available space */
   font-family: krifon;;
   font-size: 25px;
@@ -165,12 +166,12 @@ body {
 
 .header__middle h1{
   color: transparent;
-  background-image: linear-gradient(to right ,#fff, #ffe7cf, #ffa998, #ff7f50, #b86338, #fff);
+  background-image: linear-gradient(to right ,#ffffff, #ffffff, #ffffff, #ff7f50, #b86338, #fff);
   -webkit-background-clip: text;
   background-clip: text;    
   background-size: 200%;
   background-position: -200%;
-  transition: all ease-in-out 3s;
+  transition: all ease-in-out 2s;
   cursor: pointer;
 }
 .header__middle h1:hover{
@@ -183,13 +184,13 @@ body {
 }
 
 .header__icon {
-  background-color: #333; /* Icon background color */
-  border-radius: 50%;
-  padding: 5px; /* Adjust padding as needed */
+  color: transparent;
+  padding: 1px;
+  background-color: #fdfdfe;
 }
 
 .header__icon img {
-  display: block;
+  object-fit: cover;
 }
 
 @supports (height: 100dvh) {
@@ -213,7 +214,7 @@ h6 {
   padding-inline: var(--container-padding-horizontal);
   display: grid;
   place-items: center;
-  height: 100%;
+  height: 90%; 
 }
 
 .carousel {
