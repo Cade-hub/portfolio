@@ -126,7 +126,7 @@ body {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  background-color: black; /* Header background color */
+  background-color: rgb(0, 0, 0); /* Header background color */
   padding: 10px 20px; /* Adjust padding as needed */
 }
 
@@ -166,7 +166,7 @@ body {
 
 .header__middle h1{
   color: transparent;
-  background-image: linear-gradient(to right ,#ffffff, #ffffff, #ffffff, #ff7f50, #b86338, #fff);
+  background-image: linear-gradient(to right, #fff, #fff, #fff, rgb(116, 255, 236), rgb(69, 212, 255), rgb(111, 222, 255));
   -webkit-background-clip: text;
   background-clip: text;    
   background-size: 200%;
@@ -315,6 +315,15 @@ h6 {
   border: var(--border);
   -webkit-margin-end: 8px;
           margin-inline-end: 8px;
+}
+
+.instagram__profile link {
+  color: inherit;
+  font-weight: 500;
+  font-size: var(--font-size-md);
+}
+.instagram__profile link:hover {
+  opacity: 0.7;
 }
 .instagram__media {
   display: flex;
