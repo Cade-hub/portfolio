@@ -1,5 +1,5 @@
 {
-  "name": "BackgroundScaleHoverEffect",
+  "name": "backgroundscalehovereffect",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codrops/BackgroundScaleHoverEffect.git"
+    "url": "https://github.com/Cade-hub/portfolio"
   },
   "keywords": [],
-  "author": "Codrops",
+  "author": "Cade Wickham",
   "license": "MIT",
-  "homepage": "https://tympanus.net/Development/BackgroundScaleHoverEffect/",
+  "homepage": "https://secure-shore-70250-41f7468e4383.herokuapp.com/",
   "bugs": {
-    "url": "https://github.com/codrops/BackgroundScaleHoverEffect/issues"
+    "url": "https://github.com/Cade-hub/portfolio"
   },
   "dependencies": {
     "fonts": "^0.0.2",
