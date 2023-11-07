@@ -1,5 +1,5 @@
-const imagesLoaded = require('imagesloaded');
 import Navigation from "./navigation";
+const imagesLoaded = require('imagesloaded');
 // Preload images
 
 const preloadImages = () => {
