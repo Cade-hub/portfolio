@@ -1,11 +1,11 @@
-import * as Navigation from "./navigation";
+import Navigation from "./navigation";
+import imagesLoaded from 'imagesloaded';
+import WebFont from 'webfontloader';
 
-const imagesLoaded = require('imagesloaded');
 // Preload images
-
 const preloadImages = () => {
     return new Promise((resolve, reject) => {
-        imagesLoaded(document.querySelectorAll('.screen'), {background: true}, resolve);
+        imagesLoaded(document.querySelectorAll('.screen'), { background: true }, resolve);
     });
 };
 
