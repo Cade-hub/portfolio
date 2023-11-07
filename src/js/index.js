@@ -1,5 +1,7 @@
 import Navigation from "./navigation";
 import imagesLoaded from '/node_modules/imagesloaded/imagesloaded.js';
+
+
 import WebFont from '/node_modules/webfontloader/webfontloader.js';
 
 // Preload images
