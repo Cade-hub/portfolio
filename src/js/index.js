@@ -1,4 +1,4 @@
-import Navigation from "./navigation";
+import * as Navigation from "./navigation";
 
 
 
