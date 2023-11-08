@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html --no-hmr --open",
     "clean": "rm -rf dist/*",
-    "build:parcel": "parcel build index.html --no-minify --no-source-maps --public-url ./",
+    "build:parcel": "parcel build index.html --no-minify --no-source-maps --public-url https://cade-hub.github.io/portfolio/",
     "build": "npm run clean && npm run build:parcel",
     "heroku-postbuild": "npm run build"
   },
@@ -17,7 +17,7 @@
   "keywords": [],
   "author": "Cade Wickham",
   "license": "MIT",
-  "homepage": "https://secure-shore-70250-41f7468e4383.herokuapp.com/",
+  "homepage": "https://cade-hub.github.io/portfolio/",
   "bugs": {
     "url": "https://github.com/Cade-hub/portfolio"
   },
