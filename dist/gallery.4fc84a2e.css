@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Krifon";
+    src: url("https://cade-hub.github.io/portfolio/Krifon Regular.d9ee50f3.otf");
+  }
+
+@keyframes up-in {
+    from {
+        opacity: 0;
+        bottom: 0%;
+   }
+    to {
+        opacity: 1;
+        bottom: 50%;
+   }
+}
+.fill {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header {
+    display: flex;
+    padding: 0px 0px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0); /* Header background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  
+  .header__left {
+    color: white; /* Text color */
+  
+  }
+  
+  .header__left h1 {
+    font-size: 70px;
+    font-weight: 500;
+    color: #553c9a;
+    border-right: 4px solid #000;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: krifon;
+  }
+  
+  .back-button {
+    text-decoration: none; /* Remove underlines */
+    color: white; /* Text color */
+    font-size: 30px; /* Adjust font size as needed */
+    font-family: krifon;
+  }
+  
+  .back-button:hover {
+    transform: scale(1.1); /* Enlarge the button on hover */
+    color: #f0b579; /* Darken the color of text */
+  }
+  
+  .header__middle {
+    flex-grow: 1; /* Expand to take available space */
+    font-family: krifon;;
+    font-size: 25px;
+  }
+  
+  .header__middle h1{
+    color: transparent;
+    background-image: linear-gradient(to right ,#ffffff, #ffffff, #ffffff, #50ff99, #54eb7a, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;    
+    background-size: 200%;
+    background-position: -200%;
+    transition: all ease-in-out 2.5s;
+    cursor: pointer;
+    font-family: krifon;
+
+  }
+  .header__middle h1:hover{
+    background-position: 200%;
+  }
+  
+  .header__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__icon {
+    color: transparent;
+    padding: 1px;
+    background-color: #fdfdfe;
+  }
+  
+  .header__icon img {
+    object-fit: cover;
+  }
+  
+  @supports (height: 100dvh) {
+    body {
+      height: 100dvh;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+body, html {
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    color: transparent;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.container.no-scroll {
+    overflow: hidden;
+}
+.page {
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+@media (max-width: 600px) {
+    .page {
+        width: 90%;
+   }
+}
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grid .grid-item {
+    width: 33%;
+    position: relative;
+}
+.grid .grid-item:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+}
+@media (max-width: 600px) {
+    .grid .grid-item {
+        width: 50%;
+   }
+}
+.box {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box img {
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+.box.selected {
+    opacity: 0;
+}
+.box.on-top {
+    cursor: default;
+    transition: all 0.4s ease;
+    box-shadow: 2px 2px 19px -2px rgba(0, 0, 0, 0.44);
+}
+.box.image-out img {
+    transform: translateY(-100%);
+}
+.content {
+    position: absolute;
+    padding: 20px 40px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    font-family: krifon;
+}
+.show .content {
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    .content {
+        padding: 10px 20px;
+   }
+}
+.scroller {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+.scroller h1 {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    animation: up-in 1s ease;
+    font-family: krifon;
+    font-size: 50px;
+}
+.top-up.ng-hide-add, .top-up.ng-hide-remove {
+    transition: 0s ease top;
+}
+.top-up.ng-hide-add-active, .top-up.ng-hide-remove-active {
+    transition: 0.6s ease top;
+}
+.top-up.ng-hide-add {
+    top: 0;
+}
+.top-up.ng-hide-add.ng-hide-add-active {
+    top: 100%;
+}
+.top-up.ng-hide-remove {
+    top: 100%;
+}
+.top-up.ng-hide-remove.ng-hide-remove-active {
+    top: 0;
+}
+.fullscreen-background {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transition: top 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fullscreen-background.show {
+    top: 0;
+}
+.close-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.close-button i {
+    font-size: 35px;
+}
+.close-button:hover {
+    color: #ddd;
+}
