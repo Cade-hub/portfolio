@@ -1,8 +1,8 @@
 import Navigation from "./navigation";
-import { imagesLoaded  } from '/node_modules/imagesloaded/imagesloaded.js';
+import imagesLoaded from 'imagesloaded';
 
 
-import { WebFont } from '/node_modules/webfontloader/webfontloader.js';
+import WebFont from 'webfontloader';
 
 // Preload images
 const preloadImages = () => {
