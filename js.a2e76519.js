@@ -6104,13 +6104,13 @@ g,0<d.length&&(d=za[d[0]])&&(a.c[e]=d))}a.c[e]||(d=za[e])&&(a.c[e]=d);for(d=0;d<
 "use strict";
 
 var _navigation = _interopRequireDefault(require("./navigation"));
-var _imagesloaded = require("/node_modules/imagesloaded/imagesloaded.js");
-var _webfontloader = require("/node_modules/webfontloader/webfontloader.js");
+var _imagesloaded = _interopRequireDefault(require("imagesloaded"));
+var _webfontloader = _interopRequireDefault(require("webfontloader"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // Preload images
 var preloadImages = function preloadImages() {
   return new Promise(function (resolve, reject) {
-    (0, _imagesloaded.imagesLoaded)(document.querySelectorAll('.screen'), {
+    (0, _imagesloaded.default)(document.querySelectorAll('.screen'), {
       background: true
     }, resolve);
   });
@@ -6119,7 +6119,7 @@ var preloadImages = function preloadImages() {
 // Preload fonts
 var preloadFonts = function preloadFonts() {
   return new Promise(function (resolve, reject) {
-    _webfontloader.WebFont.load({
+    _webfontloader.default.load({
       typekit: {
         id: 'cze1cgq'
       },
@@ -6134,4 +6134,4 @@ Promise.all([preloadImages(), preloadFonts()]).then(function () {
   // Remove loader (loading class)
   document.body.classList.remove('loading');
 });
-},{"./navigation":"xW95","/node_modules/imagesloaded/imagesloaded.js":"ffUI","/node_modules/webfontloader/webfontloader.js":"GxDM"}]},{},["mahc"], null)
+},{"./navigation":"xW95","imagesloaded":"ffUI","webfontloader":"GxDM"}]},{},["mahc"], null)
